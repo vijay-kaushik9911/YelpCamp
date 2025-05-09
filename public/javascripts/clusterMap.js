@@ -4,7 +4,7 @@ const map = new maptilersdk.Map({
     container: 'cluster-map',
     style: maptilersdk.MapStyle.BRIGHT,
     center: [78.9629, 20.5937],
-    zoom: 4
+    zoom: 3.7
 });
 
 map.on('load', function () {
@@ -12,7 +12,7 @@ map.on('load', function () {
         type: 'geojson',
         data: campgrounds,
         cluster: true,
-        clusterMaxZoom: 14, // Max zoom to cluster points on
+        clusterMaxZoom: 10, // Max zoom to cluster points on
         clusterRadius: 50 // Radius of each cluster when clustering points (defaults to 50)
     });
 
